@@ -18,9 +18,9 @@ This tool uses variance of spectral entropy and its rate of change together with
 
 The audio files below are an example of recordings of the audio component of the Microwave Auditory Effect. You can hear that the algorithm enhances the amplitude envelope of speech patterns, enhancing the intelligibility of the material.
 
-**noisy file:** [noisy.mp4](.github/noisy.mp4)
+**noisy file:** ![noisy.mp4](https://raw.githubusercontent.com/subliminalindustries/keeptalking/main/.github/noisy.mp4)
 
-**processed file:** [noisy-processed.mp4](.github/noisy-processed.mp4)
+**processed file:** ![noisy-processed.mp4](https://raw.githubusercontent.com/subliminalindustries/keeptalking/main/.github/noisy-processed.mp4)
 
 The audio was captured using the paid version of the Hear-Boost app ([Apple App Store](https://apps.apple.com/en/app/hear-boost-recording-ear-aid/id1437159134), [Google Play Store](https://play.google.com/store/apps/details?id=com.audiofix.hearboost)) which is excellent at recording the audio spectrum components of the Microwave Auditory Effect. The settings used in Hear-Boost were: Volume Boost: 200x, Device Mic: On, Voice Filter: Off. While recording using this app sure to turn your phone volume down 100% to prevent runaway microphone feedback.
 
