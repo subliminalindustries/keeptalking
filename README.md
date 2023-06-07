@@ -1,12 +1,14 @@
 # Keep Talking
 
-A forensic audio analysis tool focused on voice identification and enhancement in low signal-to-noise ratio material.
+![Icon](.github/icon.png "icon")
 
-![Screenshot](https://raw.githubusercontent.com/subliminalindustries/keeptalking/main/.github/screenshot.png "screenshot")
+A forensic audio analysis tool focused on voice identification and enhancement in low signal-to-noise ratio material.
 
 ## Methodology
 
 This tool uses variance of spectral entropy and its rate of change together with the instantaneous frequency from the Hilbert transform to enhance vocal information.
+
+![Screenshot](.github/screenshot.png "screenshot")
 
 ## To-Do
 
