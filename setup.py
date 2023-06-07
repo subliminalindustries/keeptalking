@@ -30,7 +30,7 @@ setup(name='keeptalking',
           'python-dateutil>=2.8.2',
           'scipy>=1.10.1',
           'six>=1.16.0',
-          'sklearn>=0.0.post5',
+          'scikit-learn>=1.2.2',
           'soundfile>=0.12.1',
           'tqdm>=4.65.0'
       ],
