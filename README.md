@@ -1,6 +1,11 @@
 # Keep Talking
+--
 
-![Icon](.github/icon.png "icon")
+<p align="center" width="100%">
+    <img width="66%" src=".github/icon.png"> 
+</p>
+
+--
 
 A forensic audio analysis tool focused on voice identification and enhancement in low signal-to-noise ratio material.
 
@@ -8,7 +13,9 @@ A forensic audio analysis tool focused on voice identification and enhancement i
 
 This tool uses variance of spectral entropy and its rate of change together with the instantaneous frequency from the Hilbert transform to enhance vocal information.
 
-![Screenshot](.github/screenshot.png "screenshot")
+<p align="center" width="100%">
+    <img style="border-style: solid; border-width: thin; border-color: lightgrey;" width="100%" src=".github/screenshot.png"> 
+</p>
 
 ## To-Do
 
