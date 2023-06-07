@@ -1,10 +1,10 @@
 # Keep Talking
 
-<p style="border-style: solid; border-width: thin; border-color: lightgrey;" align="center" width="100%">
-    <img width="66%" src=".github/icon.png"> 
-</p>
-
-A forensic audio analysis tool focused on voice identification and enhancement in low signal-to-noise ratio material.
+<div style="border-style: solid; border-width: thin; border-color: lightgrey;" align="center" width="100%">
+    <img width="33%" src=".github/icon.png">
+    <h3>A forensic audio analysis tool</h3>
+    <h3>focused on voice identification and enhancement in low signal-to-noise ratio material.</h3>
+</div>
 
 ## Methodology
 
