@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: keeptalking
+Version: 0.0.1
+Summary: Forensic audio analysis tool focused on voice identification and enhancement
+Home-page: https://github.com/subliminalindustries/keeptalking
+Maintainer: Subliminal Industries
+Maintainer-email: subliminalindustries@pm.me
+License: MIT License
+Keywords: forensic,audio,analysis,voice,enhancement

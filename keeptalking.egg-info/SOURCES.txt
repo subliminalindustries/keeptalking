@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+keeptalking/__init__.py
+keeptalking/keeptalking.py
+keeptalking.egg-info/PKG-INFO
+keeptalking.egg-info/SOURCES.txt
+keeptalking.egg-info/dependency_links.txt
+keeptalking.egg-info/requires.txt
+keeptalking.egg-info/top_level.txt

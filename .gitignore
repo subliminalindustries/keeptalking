@@ -1,0 +1,4 @@
+pyenv.cfg
+.DS_Store
+
+dist/
