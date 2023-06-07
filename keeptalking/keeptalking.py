@@ -10,58 +10,52 @@ import audiofile
 # In[2]:
 
 
-import pyloudnorm as pyln
+import numpy as np
 
 
 # In[3]:
 
 
-import numpy as np
+import matplotlib.pyplot as plt
 
 
 # In[4]:
 
 
-import matplotlib.pyplot as plt
+import matplotlib.lines as plt_lines
 
 
 # In[5]:
 
 
-import matplotlib.lines as plt_lines
+from scipy.signal import hilbert, savgol_filter
 
 
 # In[6]:
 
 
-from scipy.signal import hilbert, savgol_filter
+from scipy.interpolate import Akima1DInterpolator
 
 
 # In[7]:
 
 
-from scipy.interpolate import Akima1DInterpolator
+from sklearn.preprocessing import minmax_scale
 
 
 # In[8]:
 
 
-from sklearn.preprocessing import minmax_scale
+AUDIO_FILE = '../recordings/audio/macbook pro 2013 speakers 1.peaks-removed.normalized.mp4'
 
 
 # In[9]:
 
 
-AUDIO_FILE = 'opnemen'
-
-
-# In[10]:
-
-
 from scipy.signal import spectrogram
 
 
-# In[11]:
+# In[10]:
 
 
 def hilbert_transform(data, fs, w=1024):
@@ -84,7 +78,7 @@ def hilbert_transform(data, fs, w=1024):
     return (s, f, phi, ampl, np.array(mSA), mf, mf_smoothed)
 
 
-# In[12]:
+# In[11]:
 
 
 def variance_spectral_entropy(data, fs, N=512, wsV=32):
@@ -92,10 +86,11 @@ def variance_spectral_entropy(data, fs, N=512, wsV=32):
     h = []
     p = []
     v = []
-    for i in range(t.size-1):
-        M = Sxx[:, i]
+    for i in np.arange(0, t.size-1):
+        M = Sxx[:, i]          
+        M = M[M.nonzero()]
+        # M = np.nan_to_num(M, nan=0., neginf=-1., posinf=1.)
         P = M / np.sum(M)
-        P += 0.000000001
         H = -np.sum(P * np.log2(P))
         H = H / np.log2(N)
         h.append(H)
@@ -116,7 +111,7 @@ def variance_spectral_entropy(data, fs, N=512, wsV=32):
     return (np.block(h), np.array(v), np.block(p), h_smoothed, deriv)
 
 
-# In[13]:
+# In[12]:
 
 
 signal, fs = audiofile.read(f'{AUDIO_FILE}.wav')
@@ -124,19 +119,19 @@ if signal.ndim == 2 and signal.shape[0] == 2:
     signal = signal[0]
 
 
-# In[14]:
+# In[13]:
 
 
 v = variance_spectral_entropy(data=signal, fs=fs)
 
 
-# In[15]:
+# In[14]:
 
 
 h = hilbert_transform(data=signal, fs=fs)
 
 
-# In[16]:
+# In[15]:
 
 
 mult_d = minmax_scale(np.interp(np.linspace(0, v[4].size-1, num=signal.size), np.arange(v[4].size), v[4]))
@@ -146,14 +141,14 @@ mult_h = minmax_scale(1-np.interp(np.linspace(0, h[6].size-1, num=signal.size), 
 mult = mult_d * mult_vs * mult_h
 
 
-# In[17]:
+# In[16]:
 
 
 sig_new = signal * mult
 audiofile.write(f'{AUDIO_FILE}-processed.wav', sig_new, fs, bit_depth=24, normalize=True)
 
 
-# In[18]:
+# In[17]:
 
 
 f = plt.figure()
