@@ -24,7 +24,7 @@ The audio files below are an example of recordings of the audio component of the
 
 The audio was captured using the paid version of the Hear-Boost app ([Apple App Store](https://apps.apple.com/en/app/hear-boost-recording-ear-aid/id1437159134), [Google Play Store](https://play.google.com/store/apps/details?id=com.audiofix.hearboost)) which is excellent at recording the audio spectrum components of the Microwave Auditory Effect. The settings used in Hear-Boost were: Volume Boost: 200x, Device Mic: On, Voice Filter: Off. While recording using this app sure to turn your phone volume down 100% to prevent runaway microphone feedback.
 
-NOTE: For now the algoritm processes the entire spectrum at once instead of processing frequency bins separately. Also there is some fine-tuning left to do to take out the jitter in amplitude.
+NOTE: For now the algorithm processes the entire spectrum at once instead of processing frequency bins separately. Also there is some fine-tuning left to do to take out the jitter in amplitude.
 
 ## To-Do
 
