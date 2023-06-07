@@ -2,7 +2,7 @@
 
 A forensic audio analysis tool focused on voice identification and enhancement in low signal-to-noise ratio material.
 
-![Screenshot](https://raw.githubusercontent.com/subliminalindustries/keeptalking/934a8f9c863e00531103b9a3ef8275e325362234/.github/keeptalking.png "keeptalking")
+![Screenshot](https://raw.githubusercontent.com/subliminalindustries/keeptalking/main/.github/screenshot.png "screenshot")
 
 ## Methodology
 
