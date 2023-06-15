@@ -1,7 +1,10 @@
 pyenv.cfg
 .DS_Store
 
+/data/*.wav
+__pycache__/
 .idea/
 .jupyter/
+.ipynb_checkpoints/
 dist/
 
