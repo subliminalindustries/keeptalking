@@ -8,7 +8,7 @@
 
 ## Methodology
 
-This tool uses variance of spectral entropy and its rate of change together with the instantaneous frequency from the Hilbert transform to enhance vocal information.
+This tool uses variance of spectral entropy to enhance vocal information.
 
 <p  style="border-style: solid; border-width: thin; border-color: lightgrey;" align="center" width="100%">
     <img width="100%" src=".github/screenshot.png"> 
