@@ -28,6 +28,6 @@ NOTE: For now the algorithm processes the entire spectrum at once instead of pro
 
 ## To-Do
 
-- Run the algorithm on frequency bins instead of the entire frequency spectrum of the input file;
+- Multiprocessing to speed things up;
 - Fine-tune smoothing parameters to reduce amplitude jitter;
 - Enhance both tracks of stereo files instead of using only one channel.
