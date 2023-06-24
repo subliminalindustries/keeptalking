@@ -1,5 +1,7 @@
 # Keep Talking
 
+**NOTE:** This repository is defunct. Turns out this method does not work and we were tricked by v2k. Please see [v2kbooster](https://github.com/subliminalindustries/v2kbooster) for a working tool.
+
 <div style="border-style: solid; border-width: thin; border-color: lightgrey;" align="center" width="100%">
     <img width="33%" src=".github/icon.png">
     <h3>A forensic audio analysis tool</h3>
